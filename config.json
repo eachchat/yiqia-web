@@ -34,16 +34,15 @@
     "settingDefaults": {
         "showCommunitiesInsteadOfSpaces": true,
         "language": "zh-hans",
-        "TagPanel.disableTagPanel": true,
-        "UIFeature.advancedEncryption": false,
         "UIFeature.deactivate": false,
         "UIFeature.passwordReset": false,
         "UIFeature.registration": false,
         "UIFeature.feedback": false,
-        "developerMode": false,
         "MessageComposerInput.showStickersButton": false,
         "UIFeature.shareQrCode": false,
-        "UIFeature.flair": false
+        "UIFeature.flair": false,
+        "UIFeature.enableEncrypt": false,
+        "breadcrumbs": false
     },
     "showLabsSettings": false,
     "features": { },
