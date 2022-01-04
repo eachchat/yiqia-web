@@ -40,7 +40,10 @@
         "UIFeature.passwordReset": false,
         "UIFeature.registration": false,
         "UIFeature.feedback": false,
-        "developerMode": false
+        "developerMode": false,
+        "MessageComposerInput.showStickersButton": false,
+        "UIFeature.shareQrCode": false,
+        "UIFeature.flair": false
     },
     "showLabsSettings": false,
     "features": { },
