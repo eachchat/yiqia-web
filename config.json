@@ -30,7 +30,6 @@
         "https://scalar-staging.vector.im/api",
         "https://scalar-staging.riot.im/scalar/api"
     ],
-    "bug_report_endpoint_url": "https://element.io/bugreports/submit",
     "settingDefaults": {
         "showCommunitiesInsteadOfSpaces": true,
         "TagPanel.enableTagPanel": false,
@@ -46,7 +45,10 @@
         "UIFeature.enableEncrypt": false,
         "UIFeature.advancedSettings": false,
         "breadcrumbs": false,
-        "UIFeature.conferenceEnabled": false
+        "UIFeature.conferenceEnabled": false,
+        "UIFeature.widgets": false,
+        "UIFeature.messageReport": false,
+        "UIFeature.messageViewSource": false
     },
     "showLabsSettings": false,
     "features": { },
