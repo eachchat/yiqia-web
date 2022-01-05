@@ -17,8 +17,8 @@
     },
     "brand": "亿洽",
     "branding": {
-        "welcomeBackgroundUrl": "/welcome/images/auth_background_image.png",
-        "authHeaderLogoUrl": "/vector-icons/Logo.svg",
+        "welcomeBackgroundUrl": "welcome/images/auth_background_image.png",
+        "authHeaderLogoUrl": "vector-icons/Logo.svg",
         "authFooterLinks": []
     },
     "integrations_ui_url": "https://scalar.vector.im/",
