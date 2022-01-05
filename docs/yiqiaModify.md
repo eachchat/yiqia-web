@@ -15,6 +15,7 @@
         UIFeature.advancedSettings: which can hide the setting panel security tab advance settings include ignored users panel, invites panel, e2e panel
         breadcrumbs: which hide the shortcuts to recently viewed rooms above the room list
         piwik: which can hide the setting panel security tab privacy section and analytics, we set it empty
+        UIFeature.conferenceEnabled: which set the voip visible in room
         ***************************yiqia add config**********************************************************
         EnableEncrypt: Which should hide all the encrypt function and ui features enclude cryptoEvent info, room security setting, app security setting, room avatar encurity show
                 In here we thought that the encrypt is one features of the app and we the app should have the power to decide whether the app need the feature whenever the homeserver support is.

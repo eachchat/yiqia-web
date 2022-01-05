@@ -45,7 +45,8 @@
         "UIFeature.flair": false,
         "UIFeature.enableEncrypt": false,
         "UIFeature.advancedSettings": false,
-        "breadcrumbs": false
+        "breadcrumbs": false,
+        "UIFeature.conferenceEnabled": false
     },
     "showLabsSettings": false,
     "features": { },
