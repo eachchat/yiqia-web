@@ -1,7 +1,9 @@
 1. config.json
     disable_login_language_selector: forbidden user to change app language
     settingDefaults:
-        showCommunitiesInsteadOfSpaces: which make the communities bar in left hidden.
+        showCommunitiesInsteadOfSpaces: which make the communities instead of space bar in left.Conbine with tagpanel.enableTagPanel and UIFeature.communities to hide the left bar.
+        TagPanel.enableTagPanel: to hide the left bar combinde with showCommunitiesInsteadOfSpaces
+        UIFeature.communities: false,
         language: which set the default language to zh-hans
         UIFeature.deactivate: which hide the user deactivate 
         UIFeature.passwordReset: which hide the password reset
