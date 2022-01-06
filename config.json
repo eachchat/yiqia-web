@@ -50,7 +50,10 @@
         "UIFeature.messageReport": false,
         "UIFeature.messageViewSource": false,
         "UIFeature.canChangePassword": false,
-        "UIFeature.canChangeLanguage": false
+        "UIFeature.canChangeLanguage": false,
+        "UIFeature.explorePublicEnabled": false,
+        "UIFeature.shareRoomEnabled": false,
+        "UIFeature.spaceEnabled": false
     },
     "defaultCountryCode": "CN",
     "showLabsSettings": false,
