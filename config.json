@@ -5,7 +5,7 @@
             "server_name": "stress.eachchat.net"
         },
         "m.identity_server": {
-            "base_url": "https://vector.im"
+            "base_url": "https://stress.eachchat.net"
         }
     },
     "disable_custom_urls": false,
@@ -18,7 +18,7 @@
     "brand": "亿洽",
     "branding": {
         "welcomeBackgroundUrl": "welcome/images/auth_background_image.png",
-        "authHeaderLogoUrl": "vector-icons/Logo.png",
+        "authHeaderLogoUrl": "vector-icons/Logo.svg",
         "authFooterLinks": []
     },
     "integrations_ui_url": "https://scalar.vector.im/",
@@ -30,7 +30,6 @@
         "https://scalar-staging.vector.im/api",
         "https://scalar-staging.riot.im/scalar/api"
     ],
-    "bug_report_endpoint_url": "https://element.io/bugreports/submit",
     "settingDefaults": {
         "showCommunitiesInsteadOfSpaces": true,
         "TagPanel.enableTagPanel": false,
@@ -46,8 +45,14 @@
         "UIFeature.enableEncrypt": false,
         "UIFeature.advancedSettings": false,
         "breadcrumbs": false,
-        "UIFeature.conferenceEnabled": false
+        "UIFeature.conferenceEnabled": false,
+        "UIFeature.widgets": false,
+        "UIFeature.messageReport": false,
+        "UIFeature.messageViewSource": false,
+        "UIFeature.canChangePassword": false,
+        "UIFeature.canChangeLanguage": false
     },
+    "defaultCountryCode": "CN",
     "showLabsSettings": false,
     "features": { },
     "default_federate": true,
