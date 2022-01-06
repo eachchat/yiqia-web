@@ -17,8 +17,11 @@
         UIFeature.widgets: widgets bridges & bots. this can hide the room set panel but can not hide the room header context
         UIFeature.messageReport: which hide the message context menu report item
         UIFeature.messageViewSource: which hide the message context menu view source item
+        UIFeature.canChangePassword: which hide the change password in setting panel
+        UIFeature.canChangeLanguage: which hide the language select in setting panel
     bug_report_endpoint_url: set empty which can hide the bug report section in setting panel
     piwik: which can hide the setting panel security tab privacy section and analytics, we set it empty
+    defaultCountryCode: set default country to cn
         ***************************yiqia add config**********************************************************
         EnableEncrypt: Which should hide all the encrypt function and ui features enclude cryptoEvent info, room security setting, app security setting, room avatar encurity show
                 In here we thought that the encrypt is one features of the app and we the app should have the power to decide whether the app need the feature whenever the homeserver support is.
