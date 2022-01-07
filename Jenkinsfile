@@ -27,7 +27,7 @@ pipeline {
         container('base') {
           withCredentials([usernamePassword(credentialsId : "$DOCKER_CREDENTIAL_ID" ,passwordVariable : 'DOCKER_PASSWORD' ,usernameVariable : 'DOCKER_USERNAME' ,)]) {
             sh 'echo "$DOCKER_PASSWORD" | docker login $REGISTRY -u "$DOCKER_USERNAME" --password-stdin'
-            sh 'docker build -t $REGISTRY/$DOCKERHUB_NAMESPACE/$APP_NAME:$BRANCH_NAME-$BUILD_NUMBER --build-arg USE_CUSTOM_SDKS=true --build-arg REACT_SDK_REPO="https://github.com/eachchat/yiqia-react-sdk.git" --build-arg REACT_SDK_BRANCH="develop" .'
+            sh 'docker build -t $REGISTRY/$DOCKERHUB_NAMESPACE/$APP_NAME:$BRANCH_NAME-$BUILD_NUMBER  .'
             sh 'docker push $REGISTRY/$DOCKERHUB_NAMESPACE/$APP_NAME:$BRANCH_NAME-$BUILD_NUMBER'
           }
         }
