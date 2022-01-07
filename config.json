@@ -56,6 +56,7 @@
         "UIFeature.spaceEnabled": false
     },
     "enableUpdate": false,
+    "userPermalinkEnabled": false,
     "defaultCountryCode": "CN",
     "showLabsSettings": false,
     "features": { },
