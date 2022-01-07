@@ -149,8 +149,11 @@ export async function loadApp(fragParams: {}) {
 
     const urlWithoutQuery = window.location.protocol + '//' + window.location.host + window.location.pathname;
     logger.log("Vector starting at " + urlWithoutQuery);
-
-    (platform as VectorBasePlatform).startUpdater();
+    const { enableUpdate } = SdkConfig.get();
+    logger.log("Vector canUpdate is " + enableUpdate);
+    if(enableUpdate) {
+        (platform as VectorBasePlatform).startUpdater();
+    }
 
     // Don't bother loading the app until the config is verified
     const config = await verifyServerConfig();

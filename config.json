@@ -55,6 +55,7 @@
         "UIFeature.shareRoomEnabled": false,
         "UIFeature.spaceEnabled": false
     },
+    "enableUpdate": false,
     "defaultCountryCode": "CN",
     "showLabsSettings": false,
     "features": { },

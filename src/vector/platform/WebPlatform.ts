@@ -27,6 +27,7 @@ import UAParser from 'ua-parser-js';
 import { logger } from "matrix-js-sdk/src/logger";
 
 import VectorBasePlatform from './VectorBasePlatform';
+import SdkConfig from "matrix-react-sdk/src/SdkConfig";
 
 const POKE_RATE_MS = 10 * 60 * 1000; // 10 min
 
@@ -124,7 +125,9 @@ export default class WebPlatform extends VectorBasePlatform {
     }
 
     async canSelfUpdate(): Promise<boolean> {
-        return true;
+        const { enableUpdate } = SdkConfig.get()
+        
+        return enableUpdate;
     }
 
     pollForUpdate = () => {
