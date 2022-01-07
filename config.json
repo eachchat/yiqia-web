@@ -57,6 +57,8 @@
     },
     "enableUpdate": false,
     "userPermalinkEnabled": false,
+    "messagePermalinkEnabled": false,
+    "showFallbackICEServerAllowed": false,
     "defaultCountryCode": "CN",
     "showLabsSettings": false,
     "features": { },
