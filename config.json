@@ -76,5 +76,15 @@
     },
     "jitsi": {
         "preferredDomain": "jitsi.riot.im"
-    }
+    },
+    "terms_and_conditions_links": [
+        {
+            "url": "static/privacy-policy.html",
+            "text": "Privacy Policy"
+        },
+        {
+            "url": "static/user-agreements.html",
+            "text": "User Agreements"
+        }
+    ]
 }
