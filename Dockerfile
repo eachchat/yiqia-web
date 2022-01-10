@@ -4,7 +4,7 @@ FROM node:14-buster as builder
 # Support custom branches of the react-sdk and js-sdk. This also helps us build
 # images of element-web develop.
 ARG USE_CUSTOM_SDKS=true
-ARG REACT_SDK_REPO="https://github.com/eachchat/matrix-react-sdk.git"
+ARG REACT_SDK_REPO="https://github.com/eachchat/yiqia-react-sdk.git"
 ARG REACT_SDK_BRANCH="master"
 ARG JS_SDK_REPO="https://github.com/eachchat/matrix-js-sdk.git"
 ARG JS_SDK_BRANCH="master"
