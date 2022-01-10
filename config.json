@@ -51,10 +51,11 @@
         "UIFeature.messageViewSource": false,
         "UIFeature.canChangePassword": false,
         "UIFeature.canChangeLanguage": false,
-        "UIFeature.explorePublicEnabled": false,
+        "UIFeature.explorePublicEnabled": true,
         "UIFeature.shareRoomEnabled": false,
         "UIFeature.spaceEnabled": false
     },
+    "createPublicRoomEnabled": false,
     "enableUpdate": false,
     "userPermalinkEnabled": false,
     "messagePermalinkEnabled": false,
