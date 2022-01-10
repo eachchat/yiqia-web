@@ -290,5 +290,7 @@ if (watch) {
     INCLUDE_LANGS.forEach(l => watchLanguage(l.value, I18N_DEST, I18N_FILENAME_MAP));
 }
 
+console.log("copy res finished and is config.json exist is ", fs.existsSync("webapp/config.json"));
+
 // non-language resources
 next(0);

@@ -10,7 +10,10 @@ const fetch = require("node-fetch");
 const ProxyAgent = require("simple-proxy-agent");
 
 console.log("Making webapp directory");
-mkdirp.sync("webapp");
+const mkDirRest = mkdirp.sync("webapp");
+
+console.log("mkDir rest is ", mkDirRest);
+console.log("Is config.json exist is ", fs.existsSync("config.json"));
 
 // curl -s https://jitsi.riot.im/libs/external_api.min.js > ./webapp/jitsi_external_api.min.js
 console.log("Downloading Jitsi script");
