@@ -55,6 +55,8 @@
         "UIFeature.shareRoomEnabled": false,
         "UIFeature.spaceEnabled": false
     },
+    "forceHideAvatarChanges": true,
+    "forceHideDisplaynameChanges": true,
     "createPublicRoomEnabled": false,
     "enableUpdate": false,
     "userPermalinkEnabled": false,
@@ -79,12 +81,12 @@
     },
     "terms_and_conditions_links": [
         {
-            "url": "static/privacy-policy.html",
-            "text": "Privacy Policy"
+            "url": "static/user-agreements.html",
+            "text": "用户协议"
         },
         {
-            "url": "static/user-agreements.html",
-            "text": "User Agreements"
+            "url": "static/privacy-policy.html",
+            "text": "隐私政策"
         }
     ]
 }
