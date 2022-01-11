@@ -173,7 +173,7 @@ async function start() {
         // ##########################
         // error handling begins here
         // ##########################
-        if (!acceptBrowser) {
+        if (false && !acceptBrowser) {
             await new Promise<void>(resolve => {
                 logger.error("Browser is missing required features.");
                 // take to a different landing page to AWOOOOOGA at the user
