@@ -58,6 +58,7 @@
     "forceHideAvatarChanges": true,
     "forceHideDisplaynameChanges": true,
     "createPublicRoomEnabled": false,
+    "canChangeHistory": false,
     "enableUpdate": false,
     "userPermalinkEnabled": false,
     "messagePermalinkEnabled": false,
