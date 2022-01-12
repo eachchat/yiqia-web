@@ -53,10 +53,12 @@
         "UIFeature.canChangeLanguage": false,
         "UIFeature.explorePublicEnabled": true,
         "UIFeature.shareRoomEnabled": false,
-        "UIFeature.spaceEnabled": false
+        "UIFeature.spaceEnabled": false,
+        "RoomList.orderAlphabetically": false
     },
     "forceHideAvatarChanges": true,
     "forceHideDisplaynameChanges": true,
+    "forceSpellCheckDisabled": true,
     "createPublicRoomEnabled": false,
     "canChangeHistory": false,
     "enableUpdate": false,
@@ -64,6 +66,7 @@
     "messagePermalinkEnabled": false,
     "showFallbackICEServerAllowed": false,
     "defaultCountryCode": "CN",
+    "forceOnlyDefaultCountry": true,
     "showLabsSettings": false,
     "features": { },
     "default_federate": true,
