@@ -58,7 +58,7 @@
     },
     "forceHideAvatarChanges": true,
     "forceHideDisplaynameChanges": true,
-    "forceSpellCheckDisabled": true,
+    "forceSpellCheckEnabled": false,
     "createPublicRoomEnabled": false,
     "canChangeHistory": false,
     "enableUpdate": false,
@@ -84,11 +84,11 @@
     },
     "terms_and_conditions_links": [
         {
-            "url": "static/user-agreements.html",
+            "url": "https://bbs.yiqia.com/tos",
             "text": "用户协议"
         },
         {
-            "url": "static/privacy-policy.html",
+            "url": "https://bbs.yiqia.com/privacy",
             "text": "隐私政策"
         }
     ]
