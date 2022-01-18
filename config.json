@@ -91,5 +91,13 @@
             "url": "https://bbs.yiqia.com/privacy",
             "text": "隐私政策"
         }
-    ]
+    ],
+    "mobile_android_download_info": {
+        "version": "2.5.0",
+        "url": "https://eachchat-download.pek3b.qingstor.com/yiqia/yiqia-2.5.0.apk"
+    },
+    "mobile_ios_download_info": {
+        "version": "2.5.0",
+        "url": "https://apps.apple.com/app/eachchat/id1542737644"
+    }
 }

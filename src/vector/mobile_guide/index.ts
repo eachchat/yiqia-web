@@ -31,7 +31,7 @@ function renderConfigError(message: string): void {
 }
 
 async function initPage(): Promise<void> {
-    document.getElementById('back_to_element_button').onclick = onBackToElementClick;
+    // document.getElementById('back_to_element_button').onclick = onBackToElementClick;
 
     const config = await getVectorConfig('..');
 
@@ -92,22 +92,20 @@ async function initPage(): Promise<void> {
         return renderConfigError("Unable to locate homeserver");
     }
 
-    if (hsUrl && !hsUrl.endsWith('/')) hsUrl += '/';
-    if (isUrl && !isUrl.endsWith('/')) isUrl += '/';
+    const isIos = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const isAndroid = /Android/.test(navigator.userAgent);
 
-    if (hsUrl !== 'https://matrix.org/') {
-        (document.getElementById('configure_element_button') as HTMLAnchorElement).href =
-            "https://mobile.element.io?hs_url=" + encodeURIComponent(hsUrl) +
-            "&is_url=" + encodeURIComponent(isUrl);
-        document.getElementById('step1_heading').innerHTML= '1: Install the app';
-        document.getElementById('step2_container').style.display = 'block';
-        document.getElementById('hs_url').innerText = hsUrl;
 
-        if (isUrl) {
-            document.getElementById('custom_is').style.display = 'block';
-            document.getElementById('is_url').style.display = 'block';
-            document.getElementById('is_url').innerText = isUrl;
-        }
+    if(isIos) {
+        const iosAppUrl = config['mobile_ios_download_info']['url'];
+        document.getElementById('step1_heading').innerHTML= '获取亿洽iOS客户端';
+        (document.getElementById('download_button') as HTMLAnchorElement).href = iosAppUrl;
+    }
+    
+    if(isAndroid) {
+        const iosAppUrl = config['mobile_android_download_info']['url'];
+        document.getElementById('step1_heading').innerHTML= '获取亿洽Android客户端';
+        (document.getElementById('download_button') as HTMLAnchorElement).href = iosAppUrl;
     }
 }
 
