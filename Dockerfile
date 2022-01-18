@@ -15,11 +15,9 @@ WORKDIR /src
 
 COPY . /src
 RUN dos2unix /src/scripts/docker-link-repos.sh && bash /src/scripts/docker-link-repos.sh
-RUN ls /src
 RUN yarn --network-timeout=100000 install
 
 RUN dos2unix /src/scripts/docker-package.sh && bash /src/scripts/docker-package.sh
-RUN ls /src
 
 # Copy the config now so that we don't create another layer in the app image
 RUN cp /src/config.json /src/webapp/config.json
