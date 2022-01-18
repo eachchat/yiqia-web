@@ -1,11 +1,11 @@
 {
     "default_server_config": {
         "m.homeserver": {
-            "base_url": "https://stress.eachchat.net",
-            "server_name": "stress.eachchat.net"
+            "base_url": "https://chat.yunify.com",
+            "server_name": "chat.yunify.com"
         },
         "m.identity_server": {
-            "base_url": "https://stress.eachchat.net"
+            "base_url": "https://chat.yunify.com"
         }
     },
     "disable_custom_urls": false,
@@ -17,7 +17,7 @@
     },
     "brand": "亿洽",
     "branding": {
-        "welcomeBackgroundUrl": "welcome/images/auth_background_image.png",
+        "welcomeBackgroundUrl": "welcome/images/auth_background_image.jpg",
         "authHeaderLogoUrl": "vector-icons/Logo.svg",
         "authFooterLinks": []
     },
@@ -51,22 +51,28 @@
         "UIFeature.messageViewSource": false,
         "UIFeature.canChangePassword": false,
         "UIFeature.canChangeLanguage": false,
-        "UIFeature.explorePublicEnabled": false,
+        "UIFeature.explorePublicEnabled": true,
         "UIFeature.shareRoomEnabled": false,
-        "UIFeature.spaceEnabled": false
+        "UIFeature.spaceEnabled": false,
+        "RoomList.orderAlphabetically": false
     },
+    "forceHideAvatarChanges": true,
+    "forceHideDisplaynameChanges": true,
+    "forceSpellCheckEnabled": false,
+    "createPublicRoomEnabled": false,
+    "canChangeHistory": false,
     "enableUpdate": false,
     "userPermalinkEnabled": false,
     "messagePermalinkEnabled": false,
     "showFallbackICEServerAllowed": false,
     "defaultCountryCode": "CN",
+    "forceOnlyDefaultCountry": true,
     "showLabsSettings": false,
     "features": { },
     "default_federate": true,
     "default_theme": "light",
     "roomDirectory": {
         "servers": [
-            "matrix.org"
         ]
     },
     "enable_presence_by_hs_url": {
@@ -75,5 +81,23 @@
     },
     "jitsi": {
         "preferredDomain": "jitsi.riot.im"
+    },
+    "terms_and_conditions_links": [
+        {
+            "url": "https://bbs.yiqia.com/tos",
+            "text": "用户协议"
+        },
+        {
+            "url": "https://bbs.yiqia.com/privacy",
+            "text": "隐私政策"
+        }
+    ],
+    "mobile_android_download_info": {
+        "version": "2.5.0",
+        "url": "https://eachchat-download.pek3b.qingstor.com/yiqia/yiqia-2.5.0.apk"
+    },
+    "mobile_ios_download_info": {
+        "version": "2.5.0",
+        "url": "https://apps.apple.com/app/eachchat/id1542737644"
     }
 }

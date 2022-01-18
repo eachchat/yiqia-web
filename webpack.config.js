@@ -526,6 +526,40 @@ module.exports = (env, argv) => {
                 chunks: [],
             }),
 
+            // These are the static FAQ pages
+            new HtmlWebpackPlugin({
+                template: './src/vector/static/faq.html',
+                filename: 'static/faq.html',
+                minify: false,
+                chunks: [],
+            }),
+
+            // These are the static Privacy policy pages
+            new HtmlWebpackPlugin({
+                template: './src/vector/static/privacy-policy.html',
+                filename: 'static/privacy-policy.html',
+                minify: false,
+                chunks: [],
+            }),
+            new HtmlWebpackPlugin({
+                template: './src/vector/static/privacy-policy-old.html',
+                filename: 'static/privacy-policy-old.html',
+                minify: false,
+                chunks: [],
+            }),
+            new HtmlWebpackPlugin({
+                template: './src/vector/static/push-sdk.html',
+                filename: 'static/push-sdk.html',
+                minify: false,
+                chunks: [],
+            }),
+            new HtmlWebpackPlugin({
+                template: './src/vector/static/user-agreements.html',
+                filename: 'static/user-agreements.html',
+                minify: false,
+                chunks: [],
+            }),
+
             // This is the usercontent sandbox's entry point (separate for iframing)
             new HtmlWebpackPlugin({
                 template: './node_modules/matrix-react-sdk/src/usercontent/index.html',
