@@ -84,11 +84,11 @@
     },
     "terms_and_conditions_links": [
         {
-            "url": "https://bbs.yiqia.com/tos",
+            "url": "https://yiqia.com/user-agreements.html",
             "text": "用户协议"
         },
         {
-            "url": "https://bbs.yiqia.com/privacy",
+            "url": "https://yiqia.com/privacy-policy.html",
             "text": "隐私政策"
         }
     ],
