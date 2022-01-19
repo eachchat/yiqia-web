@@ -54,6 +54,7 @@
         "UIFeature.explorePublicEnabled": true,
         "UIFeature.shareRoomEnabled": false,
         "UIFeature.spaceEnabled": false,
+        "UIFeature.messagePreviewEnabled": true,
         "RoomList.orderAlphabetically": false
     },
     "forceHideAvatarChanges": true,
@@ -98,6 +99,6 @@
     },
     "mobile_ios_download_info": {
         "version": "2.5.0",
-        "url": "https://apps.apple.com/app/eachchat/id1542737644"
+        "url": "https://apps.apple.com/cn/app/%E4%BA%BF%E6%B4%BD/id1542737644"
     }
 }
