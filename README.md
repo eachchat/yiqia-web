@@ -1,7 +1,7 @@
 亿洽
 =======
 
-亿洽 是一个基于Element-Web(https://github.com/vector-im/element-web)构建的一个社区分支。
+亿洽 是一个基于Element-Web(https://github.com/vector-im/element-web) 构建的一个社区分支。
 
 Supported Environments
 ======================
