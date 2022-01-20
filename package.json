@@ -55,7 +55,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@matrix-org/olm": "./olm-3.2.4.tgz",
+    "@matrix-org/olm": "./olm-3.2.8.tgz",
     "browser-request": "^0.3.3",
     "eslint-plugin-import": "^2.25.2",
     "gfm.css": "^1.1.2",
