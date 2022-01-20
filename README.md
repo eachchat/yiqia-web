@@ -19,7 +19,7 @@
 
 亿洽的官网地址是<https://yiqia.com/>
 
-web app的地址是<https://app.yiqia.com/>
+亿洽Web的地址是<https://app.yiqia.com/>
 
 
 安装亿洽桌面程序，参考下面的 [桌面端安装](#running-as-a-desktop-app).
@@ -75,9 +75,7 @@ yarn start
 [element-js] ℹ ｢wdm｣: Compiled successfully.
 ```
 
-   Remember, the command will not terminate since it runs the web server
-   and rebuilds source files when they change. This development server also
-   disables caching, so do NOT use it in production.
+   记住，当有代码文件修改了，这些命令运行在服务器上和重新打包代码文件的过程种不会被中断。在开发服务器上的缓存是禁止的，因为不要用在生产环境上。
 
 
 ___
@@ -96,22 +94,8 @@ ___
 yarn test
 ```
 
-### End-to-End tests
+### End-to-End 测试
 
 根据 [matrix-react-sdk](https://github.com/matrix-org/matrix-react-sdk/#end-to-end-tests) 怎样运行end-to-end测试.
 
-翻译
-============
 
-添加翻译, 参考 [translating doc](docs/translating.md).
-
-For a developer guide, see the [translating dev doc](docs/translating-dev.md).
-
-[<img src="https://translate.element.io/widgets/element-web/-/multi-auto.svg" alt="translationsstatus" width="340">](https://translate.element.io/engage/element-web/?utm_source=widget)
-
-Triaging issues
-===============
-
-Issues are triaged by community members and the Web App Team, following the [triage process](https://github.com/vector-im/element-meta/wiki/Triage-process).
-
-We use [issue labels](https://github.com/vector-im/element-meta/wiki/Issue-labelling) to sort all incoming issues.
