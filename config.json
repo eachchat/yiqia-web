@@ -85,6 +85,10 @@
     },
     "terms_and_conditions_links": [
         {
+            "url": "https://yiqia.com/copyright-notice.html",
+            "text": "版权声明"
+        },
+        {
             "url": "https://yiqia.com/user-agreements.html",
             "text": "用户协议"
         },
