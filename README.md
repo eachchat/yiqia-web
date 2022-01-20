@@ -27,7 +27,7 @@ web app的地址是<https://app.yiqia.com/>
 运行桌面端
 ========================
 
-亿洽能用electron包装并运行在桌面端，你可以从 <https://github.com/eachchat/Yiqia-desktop/release>下载一个预先构建的版本。
+亿洽能用electron包装并运行在桌面端，你可以从 <https://github.com/eachchat/yiqia-desktop/release>下载一个预先构建的版本。
 
 自己构建需要参考 <https://github.com/eachchat/yiqia-desktop>.
 
