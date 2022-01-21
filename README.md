@@ -58,7 +58,7 @@ popd
 
 ```bash
 git clone https://github.com/eachchat/yiqia-web.git
-cd element-web
+cd yiqia-web
 yarn link matrix-js-sdk
 yarn link matrix-react-sdk
 yarn install
@@ -66,16 +66,6 @@ yarn reskindex
 yarn start
 ```
 
-稍等一会你会看到构建完成类似：
-
-```
-[element-js] <s> [webpack.Progress] 100%
-[element-js]
-[element-js] ℹ ｢wdm｣:    1840 modules
-[element-js] ℹ ｢wdm｣: Compiled successfully.
-```
-
-   记住，当有代码文件修改了，这些命令运行在服务器上和重新打包代码文件的过程种不会被中断。在开发服务器上的缓存是禁止的，因为不要用在生产环境上。
 
 
 ___
@@ -88,7 +78,7 @@ ___
 运行测试程序
 -----------------
 
-有一些测试用例在 `tests` 文件夹; 这些被设计使用 Jest and JSDOM 运行. 运行他们需要执行
+有一些测试用例在 `tests` 文件夹，这些被设计使用 Jest and JSDOM 运行。运行他们需要执行
 
 ```
 yarn test
