@@ -8,21 +8,21 @@
 
 
 * 操作系统
-  * mac
-  * window 10, windows 11
-  * ubuntu
+  * macOS
+  * Windows
+  * Linux
 * 浏览器
   * 亿洽可以安装 Chrome, Firefox, 和 Safari的web端
 
 开始
 ===============
 
-亿洽的官网地址是<https://yiqia.com/>
+亿洽官网: <https://yiqia.com/>
 
-亿洽Web的地址是<https://app.yiqia.com/>
+亿洽Web: <https://app.yiqia.com/>
 
 
-安装亿洽桌面程序，参考下面的 [桌面端安装](#running-as-a-desktop-app).
+安装亿洽桌面程序，参考下面的 [桌面端安装](#running-as-a-desktop-app)。
 
 运行桌面端
 ========================
