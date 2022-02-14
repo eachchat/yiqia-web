@@ -103,7 +103,7 @@ For a good example, see https://develop.element.io/config.json.
 1. `jitsi`: Used to change the default conference options. Learn more about the
    Jitsi options at [jitsi.md](./jitsi.md).
     1. `preferredDomain`: The domain name of the preferred Jitsi instance. Defaults
-       to `jitsi.riot.im`. This is used whenever a user clicks on the voice/video
+       to `meet.element.io`. This is used whenever a user clicks on the voice/video
        call buttons - integration managers may use a different domain.
 1. `enable_presence_by_hs_url`: The property key should be the URL of the homeserver
     and its value defines whether to enable/disable the presence status display
@@ -152,8 +152,8 @@ For a good example, see https://develop.element.io/config.json.
 1. `sentry`: [Sentry](https://sentry.io/) configuration for rageshake data being sent to sentry.
    1. `dsn`: the Sentry [DSN](https://docs.sentry.io/product/sentry-basics/dsn-explainer/)
    2. `environment`: (optional) The [Environment](https://docs.sentry.io/product/sentry-basics/environments/) to pass to sentry
-1. `map_style_url`: Maptile server URL for location sharing. e.g.
-   'https://api.maptiler.com/maps/basic/style.json?key=YOUR_KEY_GOES_HERE'
+1. `map_style_url`: Map tile server style URL for location sharing. e.g.
+   'https://api.maptiler.com/maps/streets/style.json?key=YOUR_KEY_GOES_HERE'
 1. `analyticsOwner`: The entity that analytics data is being sent to. Used in copy
    when explaining to the user where data is being sent. If not set, defaults to `brand`.
 

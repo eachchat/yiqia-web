@@ -126,31 +126,6 @@ and notification noises are suppressed. Not perfect, but can help reduce noise.
 
 Enables sending hidden read receipts as per [MSC2285](https://github.com/matrix-org/matrix-doc/pull/2285)
 
-## New layout switcher (with message bubbles) (`feature_new_layout_switcher`)
-
-Adds a "Message layout" section under `Settings -> Appearance`, where the user can select their preferred message layout (e.g. IRC or Modern). Additionally, adds a new "Message bubbles" layout.
-
-## Polls (`feature_polls`) [In Development]
-
-Polls are a way to gauge interest from your community about a certain topic with a simple voting mechanic
-within the message timeline. Note that this feature is currently under active development and therefore is
-entirely incomplete and may not work at all - it is not recommended for general use at this time.
-
-Bug reports, feature requests, etc are not currently accepted for this feature flag. A later stage of
-development will provide opportunities for feedback.
-
-## Maximised widgets (`feature_maximised_widgets`) [In Development]
-
-Maximised widgets provide a room layout in which a widget is (temporarily) the primary focus of the room. The whole chat area is then used for the widget. The chat is moved into the right panel.
-
-Note that this feature is currently under active development and therefore is
-entirely incomplete and may not work at all - it is not recommended for general use at this time.
-
-## Metaspaces (`feature_spaces_metaspaces`) [In Development]
-
-Metaspaces are automatically populated spaces you can enable in your Space panel.
-By default, you'll have Home or All rooms, but you can opt in to a People, Favourites, and Other Rooms metaspace too.
-
 ## Location sharing (`feature_location_share`) [In Development]
 
 Allows users to send and display location data using [maplibre](https://maplibre.org).
@@ -160,9 +135,9 @@ demonstrate viability and prove [MSC3488](https://github.com/matrix-org/matrix-d
 and [MSC3489](https://github.com/matrix-org/matrix-doc/pull/3489) - **the UI has not yet
 been designed, and it will not exit labs until it has**.
 
-For this to work, you must specify a valid maptiler.com API key in
-`"map_style_url": "https://api.maptiler.com/maps/basic/style.json?key=YOUR_KEY_GOES_HERE"`
-in your config.json, or find an alternative map tile server.
+For this to work, you must specify the URL of a valid map tile server style file in
+the `map_style_url` setting in config.json.
+For example: "https://api.maptiler.com/maps/streets/style.json?key=YOUR_KEY_GOES_HERE"`
 
 ## Breadcrumbs v2 (`feature_breadcrumbs_v2`)
 
@@ -172,3 +147,28 @@ triggered by the button to the right of the filter field.
 ## Spotlight search (`feature_spotlight`) [In Development]
 
 Switches to a new room search experience.
+
+## Extensible events rendering (`feature_extensible_events`) [In Development]
+
+*Intended for developer use only at the moment.*
+
+Extensible Events are a [new event format](https://github.com/matrix-org/matrix-doc/pull/1767) which
+supports graceful fallback in unknown event types. Instead of rendering nothing or a blank space, events
+can define a series of other events which represent the event's information but in different ways. The
+base of these fallbacks being text.
+
+Turning this flag on indicates that, when possible, the extensible events structure should be parsed on
+supported event types. This should lead to zero perceptual change in the timeline except in cases where
+the sender is using unknown/unrecognised event types.
+
+Sending events with extensible events structure is always enabled - this should not affect any downstream
+client.
+
+## Right panel stays open (`feature_right_panel_default_open`)
+
+This is an experimental default open right panel mode as a quick fix for those
+who prefer to have the right panel open consistently across rooms.
+
+If no right panel state is known for the room or it was closed on the last room
+visit, it will default to the room member list. Otherwise, the saved card last
+used in that room is shown.
