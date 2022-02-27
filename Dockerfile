@@ -7,7 +7,7 @@ ARG USE_CUSTOM_SDKS=false
 ARG REACT_SDK_REPO="https://github.com/eachchat/yiqia-react-sdk.git"
 ARG REACT_SDK_BRANCH="master"
 ARG JS_SDK_REPO="https://github.com/matrix-org/matrix-js-sdk.git"
-ARG JS_SDK_BRANCH="master"
+ARG JS_SDK_BRANCH="v15.5.0"
 
 RUN apt-get update && apt-get install -y git dos2unix
 
