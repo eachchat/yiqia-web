@@ -58,6 +58,7 @@
         "RoomList.orderAlphabetically": false,
         "mixedChatsWithDmAndRoom": true
     },
+    "showPoll": false,
     "canChangeIdentityServer": false,
     "hasGMS": true,
     "forceHideAvatarChanges": true,
