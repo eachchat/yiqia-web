@@ -86,9 +86,9 @@ yarn link matrix-js-sdk
 
 echo 'Setting up matrix-react-sdk'
 
-dodep matrix-org matrix-react-sdk
+dodep eachchat yiqia-react-sdk
 
-pushd matrix-react-sdk
+pushd yiqia-react-sdk
 yarn link
 yarn link matrix-js-sdk
 yarn install --pure-lockfile
