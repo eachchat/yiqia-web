@@ -5,7 +5,7 @@
             "server_name": "chat.yunify.com"
         },
         "m.identity_server": {
-            "base_url": "https://chat.yunify.com"
+            "base_url": "https://is.yiqia.com"
         }
     },
     "disable_custom_urls": false,
