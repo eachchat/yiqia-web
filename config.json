@@ -58,6 +58,7 @@
         "RoomList.orderAlphabetically": false,
         "mixedChatsWithDmAndRoom": true
     },
+    "forbiddenIgnore": true,
     "shareThreepidWhenBind": true,
     "showPoll": false,
     "canChangeIdentityServer": false,
