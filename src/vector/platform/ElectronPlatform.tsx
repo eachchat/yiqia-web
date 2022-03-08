@@ -297,21 +297,21 @@ export default class ElectronPlatform extends VectorBasePlatform {
         if (isMac) {
             registerShortcut("KeyBinding.openUserSettings", CategoryName.NAVIGATION, {
                 default: {
-                    commandKey: true,
+                    metaKey: true,
                     key: Key.COMMA,
                 },
                 displayName: _td("Open user settings"),
             });
             registerShortcut("KeyBinding.previousVisitedRoomOrCommunity", CategoryName.NAVIGATION, {
                 default: {
-                    commandKey: true,
+                    metaKey: true,
                     key: Key.SQUARE_BRACKET_LEFT,
                 },
                 displayName: _td("Previous recently visited room or community"),
             });
             registerShortcut("KeyBinding.nextVisitedRoomOrCommunity", CategoryName.NAVIGATION, {
                 default: {
-                    commandKey: true,
+                    metaKey: true,
                     key: Key.SQUARE_BRACKET_RIGHT,
                 },
                 displayName: _td("Next recently visited room or community"),
@@ -548,6 +548,14 @@ export default class ElectronPlatform extends VectorBasePlatform {
 
     async getSpellCheckLanguages(): Promise<string[]> {
         return this.ipcCall('getSpellCheckLanguages');
+    }
+
+    async getDesktopCapturerSources(options: GetSourcesOptions): Promise<Array<DesktopCapturerSource>> {
+        return this.ipcCall('getDesktopCapturerSources', options);
+    }
+
+    supportsDesktopCapturer(): boolean {
+        return true;
     }
 
     async getAvailableSpellCheckLanguages(): Promise<string[]> {

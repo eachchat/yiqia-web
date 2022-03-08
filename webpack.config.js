@@ -95,6 +95,8 @@ module.exports = (env, argv) => {
         node: {
             // Mock out the NodeFS module: The opus decoder imports this wrongly.
             fs: 'empty',
+            net: 'empty',
+            tls: 'empty',
         },
 
         entry: {
@@ -329,7 +331,6 @@ module.exports = (env, argv) => {
                                     require('postcss-import')(),
                                     require("postcss-mixins")(),
                                     require("postcss-simple-vars")(),
-                                    require("postcss-extend")(),
                                     require("postcss-nested")(),
                                     require("postcss-easings")(),
                                     require("postcss-strip-inline-comments")(),
