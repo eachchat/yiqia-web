@@ -58,6 +58,8 @@
         "RoomList.orderAlphabetically": false,
         "mixedChatsWithDmAndRoom": true
     },
+    "gmsUpdateInterval": 600000,
+    "forbiddenBan": true,
     "forbiddenIgnore": true,
     "shareThreepidWhenBind": true,
     "hidePoll": true,
