@@ -59,6 +59,7 @@
         "mixedChatsWithDmAndRoom": true
     },
     "gmsUpdateInterval": 600000,
+    "yiqiaDisableSlash": true,
     "forbiddenBan": true,
     "forbiddenIgnore": true,
     "shareThreepidWhenBind": true,
