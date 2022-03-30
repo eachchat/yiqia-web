@@ -9,7 +9,7 @@ if [ $USE_CUSTOM_SDKS == false ] && [ $BRANCH == 'develop' ]
 then
     echo "using develop dependencies for react-sdk and js-sdk"
     USE_CUSTOM_SDKS=true
-    JS_SDK_BRANCH='master'
+    JS_SDK_BRANCH='develop'
     REACT_SDK_BRANCH='develop'
 fi
 
