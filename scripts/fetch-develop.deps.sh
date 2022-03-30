@@ -73,7 +73,7 @@ function dodep() {
 
 echo 'Setting up matrix-js-sdk'
 
-dodep matrix-org matrix-js-sdk
+dodep eachchat matrix-js-sdk
 
 pushd matrix-js-sdk
 yarn link
