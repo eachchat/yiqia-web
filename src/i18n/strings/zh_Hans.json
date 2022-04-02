@@ -34,5 +34,7 @@
     "%(brand)s uses advanced browser features which aren't supported by your current browser.": "当前浏览器不支持 %(brand)s 所需的高级浏览器特性。",
     "Powered by Matrix": "由 Matrix 驱动",
     "Use %(brand)s on mobile": "在移动设备上使用 %(brand)s",
-    "Switch to space by number": "按数字切换空间"
+    "Switch to space by number": "按数字切换空间",
+    "Your Yiqia is misconfigured": "亿洽 配置错误",
+    "Your Yiqia configuration contains invalid JSON. Please correct the problem and reload the page.": "亿洽 配置文件中包含无效的 JSON，请改正错误并重新加载页面。"
 }
