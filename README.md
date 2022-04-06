@@ -84,7 +84,13 @@ ___
 yarn test
 ```
 
+<<<<<<< HEAD
 ### End-to-End 测试
+=======
+### End-to-End tests
+
+See [matrix-react-sdk](https://github.com/matrix-org/matrix-react-sdk/#end-to-end-tests) for how to run the end-to-end tests.
+>>>>>>> v1.10.8
 
 根据 [matrix-react-sdk](https://github.com/matrix-org/matrix-react-sdk/#end-to-end-tests) 怎样运行end-to-end测试.
 

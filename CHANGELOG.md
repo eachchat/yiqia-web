@@ -1,3 +1,201 @@
+Changes in [1.10.8-rc.1](https://github.com/vector-im/element-web/releases/tag/v1.10.8-rc.1) (2022-03-22)
+=========================================================================================================
+
+## ✨ Features
+ * Live location sharing: live share warning in room ([\#8100](https://github.com/matrix-org/matrix-react-sdk/pull/8100)).
+ * Add simple live share warning ([\#8066](https://github.com/matrix-org/matrix-react-sdk/pull/8066)).
+ * extract reusable styled live beacon icon ([\#8103](https://github.com/matrix-org/matrix-react-sdk/pull/8103)).
+ * Don't restore MemberInfo from RightPanel history when viewing a room ([\#8090](https://github.com/matrix-org/matrix-react-sdk/pull/8090)). Fixes #21487.
+ * Allow sending files as replies as per MSC3676 ([\#8020](https://github.com/matrix-org/matrix-react-sdk/pull/8020)). Fixes #7156.
+ * kill beacons on expiry ([\#8075](https://github.com/matrix-org/matrix-react-sdk/pull/8075)).
+ * enable geolocation behaviour in location picker for live share type ([\#8068](https://github.com/matrix-org/matrix-react-sdk/pull/8068)).
+ * Improve formatting features in the editor ([\#7104](https://github.com/matrix-org/matrix-react-sdk/pull/7104)). Fixes #19501. Contributed by @alexanderstephan.
+ * Support MSC3026 busy presence ([\#8043](https://github.com/matrix-org/matrix-react-sdk/pull/8043)).
+ * Show displayname in non-narrow thread summeries ([\#8036](https://github.com/matrix-org/matrix-react-sdk/pull/8036)). Fixes #19646.
+ * Tweak search dialog based on new designs ([\#7980](https://github.com/matrix-org/matrix-react-sdk/pull/7980)). Fixes #21285 and #21289.
+ * fallback to event text in location body when map unavailable ([\#7982](https://github.com/matrix-org/matrix-react-sdk/pull/7982)). Fixes #20655.
+ * Send pin drop location share events ([\#7967](https://github.com/matrix-org/matrix-react-sdk/pull/7967)).
+
+## 🐛 Bug Fixes
+ * fix quicktime video thumbnailing ([\#8108](https://github.com/matrix-org/matrix-react-sdk/pull/8108)). Fixes #21505.
+ * Fix scroll behaviour in space panel ([\#8111](https://github.com/matrix-org/matrix-react-sdk/pull/8111)). Fixes #21467.
+ * Fix emoting with emoji or pills ([\#8105](https://github.com/matrix-org/matrix-react-sdk/pull/8105)). Fixes #21497.
+ * Remove padding of InviteDialog & fix visual regression ([\#8076](https://github.com/matrix-org/matrix-react-sdk/pull/8076)). Fixes #20631. Contributed by @luixxiul.
+ * Fixes mx_MLocationBody_markerBorder ([\#8069](https://github.com/matrix-org/matrix-react-sdk/pull/8069)). Fixes #21444. Contributed by @luixxiul.
+ * Make margin and padding of mx_InviteDialog_other consistent ([\#8063](https://github.com/matrix-org/matrix-react-sdk/pull/8063)). Fixes #20631. Contributed by @luixxiul.
+ * Fix freeze/crash when 1:1 calling ([\#8057](https://github.com/matrix-org/matrix-react-sdk/pull/8057)). Fixes #21181.
+ * Don't assume that widget IDs are unique ([\#8052](https://github.com/matrix-org/matrix-react-sdk/pull/8052)). Fixes #21399.
+ * Fix the header of Space landing page ([\#8048](https://github.com/matrix-org/matrix-react-sdk/pull/8048)). Fixes #21402. Contributed by @luixxiul.
+ * Fix buttons alignment of Space list header ([\#8047](https://github.com/matrix-org/matrix-react-sdk/pull/8047)). Fixes #21401. Contributed by @luixxiul.
+ * Fix null-guarding regression around reply_to_event dispatch ([\#8039](https://github.com/matrix-org/matrix-react-sdk/pull/8039)).
+ * Fix clicking on copy link to thread wrongly opening thread ([\#8038](https://github.com/matrix-org/matrix-react-sdk/pull/8038)). Fixes #20653.
+ * Fix regression around replying to search results ([\#8035](https://github.com/matrix-org/matrix-react-sdk/pull/8035)). Fixes #21389.
+ * Share shared history keys in the background ([\#8031](https://github.com/matrix-org/matrix-react-sdk/pull/8031)). Fixes #21192.
+ * Paginate responses to pinned polls ([\#8025](https://github.com/matrix-org/matrix-react-sdk/pull/8025)). Fixes #21382.
+ * Fix incorrect usage of unstable variant of `is_falling_back` ([\#8016](https://github.com/matrix-org/matrix-react-sdk/pull/8016)).
+ * Fix issues with ThreadSummary in msc-enabled mode ([\#8018](https://github.com/matrix-org/matrix-react-sdk/pull/8018)). Fixes matrix-org/element-web-rageshakes#11401 and matrix-org/element-web-rageshakes#11400.
+ * Fix alignment of polls within threads ([\#8017](https://github.com/matrix-org/matrix-react-sdk/pull/8017)). Fixes #21235.
+ * Fix issues with thread summaries being wrong or stale ([\#8015](https://github.com/matrix-org/matrix-react-sdk/pull/8015)). Fixes #21363 and #21204.
+ * Fix button border color of LeaveSpaceDialog ([\#8010](https://github.com/matrix-org/matrix-react-sdk/pull/8010)). Fixes #21365. Contributed by @luixxiul.
+ * Fix room list scroll jumps ([\#7991](https://github.com/matrix-org/matrix-react-sdk/pull/7991)). Fixes #19322.
+ * Fix a variety of issues with HTML → Markdown conversion ([\#8004](https://github.com/matrix-org/matrix-react-sdk/pull/8004)). Fixes #10648, #20718, #10722, #10389, #17610 #9984 and #20140.
+ * Wrap EventTile rather than its children in an error boundary ([\#7945](https://github.com/matrix-org/matrix-react-sdk/pull/7945)).
+ * Normalized shortcut formatting for quote expansion control ([\#7995](https://github.com/matrix-org/matrix-react-sdk/pull/7995)). Fixes #19685. Contributed by @Sinharitik589.
+ * Fix buttons and text layout on Security Key dialog ([\#7996](https://github.com/matrix-org/matrix-react-sdk/pull/7996)). Fixes #21330. Contributed by @luixxiul.
+ * Fix formatting not being applied after links ([\#7990](https://github.com/matrix-org/matrix-react-sdk/pull/7990)). Fixes #20091.
+
+Changes in [1.10.7](https://github.com/vector-im/element-web/releases/tag/v1.10.7) (2022-03-15)
+===============================================================================================
+
+## 🔒 SECURITY FIXES
+
+ * Fix a bug where URL previews could be enabled in the left-panel when they
+   should not have been.
+
+## ✨ Features
+ * Add a config.json option to skip the built-in Jitsi welcome screen ([\#21190](https://github.com/vector-im/element-web/pull/21190)).
+ * Add unexposed account setting for hiding poll creation ([\#7972](https://github.com/matrix-org/matrix-react-sdk/pull/7972)).
+ * Allow pinning polls ([\#7922](https://github.com/matrix-org/matrix-react-sdk/pull/7922)). Fixes #20152.
+ * Make trailing `:` into a setting ([\#6711](https://github.com/matrix-org/matrix-react-sdk/pull/6711)). Fixes #16682. Contributed by @SimonBrandner.
+ * Location sharing > back button ([\#7958](https://github.com/matrix-org/matrix-react-sdk/pull/7958)).
+ * use LocationAssetType ([\#7965](https://github.com/matrix-org/matrix-react-sdk/pull/7965)).
+ * Location share type UI ([\#7924](https://github.com/matrix-org/matrix-react-sdk/pull/7924)).
+ * Add a few more UIComponent flags, and ensure they are used in existing code ([\#7937](https://github.com/matrix-org/matrix-react-sdk/pull/7937)).
+ * Add support for overriding strings in the app ([\#7886](https://github.com/matrix-org/matrix-react-sdk/pull/7886)).
+ * Add support for redirecting to external pages after logout ([\#7905](https://github.com/matrix-org/matrix-react-sdk/pull/7905)).
+ * Expose redaction power level in room settings ([\#7599](https://github.com/matrix-org/matrix-react-sdk/pull/7599)). Fixes #20590. Contributed by @SimonBrandner.
+ * Update and expand ways to access pinned messages ([\#7906](https://github.com/matrix-org/matrix-react-sdk/pull/7906)). Fixes #21209 and #21211.
+ * Add slash command to switch to a room's virtual room ([\#7839](https://github.com/matrix-org/matrix-react-sdk/pull/7839)).
+
+## 🐛 Bug Fixes
+ * Remove Lojban translation ([\#21302](https://github.com/vector-im/element-web/pull/21302)).
+ * Merge pull request from GHSA-qmf4-7w7j-vf23 ([\#8059](https://github.com/matrix-org/matrix-react-sdk/pull/8059)).
+ * Add another null guard for member ([\#7984](https://github.com/matrix-org/matrix-react-sdk/pull/7984)). Fixes #21319.
+ * Fix room account settings ([\#7999](https://github.com/matrix-org/matrix-react-sdk/pull/7999)).
+ * Fix missing summary text for pinned message changes ([\#7989](https://github.com/matrix-org/matrix-react-sdk/pull/7989)). Fixes #19823.
+ * Pass room to getRoomTombstone to avoid racing with setState ([\#7986](https://github.com/matrix-org/matrix-react-sdk/pull/7986)).
+ * Hide composer and call buttons when the room is tombstoned ([\#7975](https://github.com/matrix-org/matrix-react-sdk/pull/7975)). Fixes #21286.
+ * Fix bad ternary statement in autocomplete user pill insertions ([\#7977](https://github.com/matrix-org/matrix-react-sdk/pull/7977)). Fixes #21307.
+ * Fix sending locations into threads and fix i18n ([\#7943](https://github.com/matrix-org/matrix-react-sdk/pull/7943)). Fixes #21267.
+ * Fix location map attribution rendering over message action bar ([\#7974](https://github.com/matrix-org/matrix-react-sdk/pull/7974)). Fixes #21297.
+ * Fix wrongly asserting that PushRule::conditions is non-null ([\#7973](https://github.com/matrix-org/matrix-react-sdk/pull/7973)). Fixes #21305.
+ * Fix account & room settings race condition ([\#7953](https://github.com/matrix-org/matrix-react-sdk/pull/7953)). Fixes #21163.
+ * Fix bug with some space selections not being applied ([\#7971](https://github.com/matrix-org/matrix-react-sdk/pull/7971)). Fixes #21290.
+ * Revert "replace all require(.svg) with esm import" ([\#7969](https://github.com/matrix-org/matrix-react-sdk/pull/7969)). Fixes #21293.
+ * Hide unpinnable pinned messages in more cases ([\#7921](https://github.com/matrix-org/matrix-react-sdk/pull/7921)).
+ * Fix room list being laggy while scrolling 🐌 ([\#7939](https://github.com/matrix-org/matrix-react-sdk/pull/7939)). Fixes #21262.
+ * Make pinned messages more reliably reflect edits ([\#7920](https://github.com/matrix-org/matrix-react-sdk/pull/7920)). Fixes #17098.
+ * Improve accessibility of the BetaPill ([\#7949](https://github.com/matrix-org/matrix-react-sdk/pull/7949)). Fixes #21255.
+ * Autofocus correct composer after sending reaction ([\#7950](https://github.com/matrix-org/matrix-react-sdk/pull/7950)). Fixes #21273.
+ * Consider polls as message events for rendering redactions ([\#7944](https://github.com/matrix-org/matrix-react-sdk/pull/7944)). Fixes #21125.
+ * Prevent event tiles being shrunk/collapsed by flexbox ([\#7942](https://github.com/matrix-org/matrix-react-sdk/pull/7942)). Fixes #21269.
+ * Fix ExportDialog title on export cancellation ([\#7936](https://github.com/matrix-org/matrix-react-sdk/pull/7936)). Fixes #21260. Contributed by @luixxiul.
+ * Mandate use of js-sdk/src/matrix import over js-sdk/src ([\#7933](https://github.com/matrix-org/matrix-react-sdk/pull/7933)). Fixes #21253.
+ * Fix backspace not working in the invite dialog ([\#7931](https://github.com/matrix-org/matrix-react-sdk/pull/7931)). Fixes #21249. Contributed by @SimonBrandner.
+ * Fix right panel soft crashes due to missing room prop ([\#7923](https://github.com/matrix-org/matrix-react-sdk/pull/7923)). Fixes #21243.
+ * fix color of location share caret ([\#7917](https://github.com/matrix-org/matrix-react-sdk/pull/7917)).
+ * Wrap all EventTiles with a TileErrorBoundary and guard parsePermalink ([\#7916](https://github.com/matrix-org/matrix-react-sdk/pull/7916)). Fixes #21216.
+ * Fix changing space sometimes bouncing to the wrong space ([\#7910](https://github.com/matrix-org/matrix-react-sdk/pull/7910)). Fixes #20425.
+ * Ensure EventListSummary key does not change during backpagination ([\#7915](https://github.com/matrix-org/matrix-react-sdk/pull/7915)). Fixes #9192.
+ * Fix positioning of the thread context menu ([\#7918](https://github.com/matrix-org/matrix-react-sdk/pull/7918)). Fixes #21236.
+ * Inject sender into pinned messages ([\#7904](https://github.com/matrix-org/matrix-react-sdk/pull/7904)). Fixes #20314.
+ * Tweak info message padding in right panel timeline ([\#7901](https://github.com/matrix-org/matrix-react-sdk/pull/7901)). Fixes #21212.
+ * Fix another freeze on room switch ([\#7900](https://github.com/matrix-org/matrix-react-sdk/pull/7900)). Fixes #21127.
+ * Fix out of memory error when failing to acquire location ([\#7902](https://github.com/matrix-org/matrix-react-sdk/pull/7902)). Fixes #21213.
+ * Fix edge case in context menu chevron positioning ([\#7899](https://github.com/matrix-org/matrix-react-sdk/pull/7899)).
+ * Fix composer format buttons on WebKit ([\#7898](https://github.com/matrix-org/matrix-react-sdk/pull/7898)). Fixes #20868.
+ * manage voicerecording state when deleting or sending a voice message ([\#7896](https://github.com/matrix-org/matrix-react-sdk/pull/7896)). Fixes #21151.
+ * Fix bug with useRoomHierarchy tight-looping loadMore on error ([\#7893](https://github.com/matrix-org/matrix-react-sdk/pull/7893)).
+ * Fix upload button & shortcut not working for narrow composer mode ([\#7894](https://github.com/matrix-org/matrix-react-sdk/pull/7894)). Fixes #21175 and #21142.
+ * Fix emoji insertion in thread composer going to the main composer ([\#7895](https://github.com/matrix-org/matrix-react-sdk/pull/7895)). Fixes #21202.
+ * Try harder to keep context menus inside the window ([\#7863](https://github.com/matrix-org/matrix-react-sdk/pull/7863)). Fixes #17527 and #18377.
+ * Fix edge case around event list summary layout ([\#7891](https://github.com/matrix-org/matrix-react-sdk/pull/7891)). Fixes #21180.
+ * Fix event list summary 1 hidden message pluralisation ([\#7890](https://github.com/matrix-org/matrix-react-sdk/pull/7890)). Fixes #21196.
+ * Fix vanishing recently viewed menu ([\#7887](https://github.com/matrix-org/matrix-react-sdk/pull/7887)). Fixes #20827.
+ * Fix freeze on room switch ([\#7884](https://github.com/matrix-org/matrix-react-sdk/pull/7884)). Fixes #21127.
+ * Check 'useSystemTheme' in quick settings theme switcher ([\#7809](https://github.com/matrix-org/matrix-react-sdk/pull/7809)). Fixes #21061.
+ * Fix 'my threads' filtering to include participated threads ([\#7882](https://github.com/matrix-org/matrix-react-sdk/pull/7882)). Fixes #20877.
+ * Remove log line to try to fix freeze on answering VoIP call ([\#7883](https://github.com/matrix-org/matrix-react-sdk/pull/7883)).
+ * Support social login & password on soft logout page ([\#7879](https://github.com/matrix-org/matrix-react-sdk/pull/7879)). Fixes #21099.
+ * Fix missing padding on server picker ([\#7864](https://github.com/matrix-org/matrix-react-sdk/pull/7864)).
+ * Throttle RoomState.members handlers ([\#7876](https://github.com/matrix-org/matrix-react-sdk/pull/7876)). Fixes #21127.
+ * Only show joined/invited in search dialog ([\#7875](https://github.com/matrix-org/matrix-react-sdk/pull/7875)). Fixes #21161.
+ * Don't pillify code blocks ([\#7861](https://github.com/matrix-org/matrix-react-sdk/pull/7861)). Fixes #20851 and #18687.
+ * Fix keyboard shortcut icons on macOS ([\#7869](https://github.com/matrix-org/matrix-react-sdk/pull/7869)).
+
+Changes in [1.10.7-rc.1](https://github.com/vector-im/element-web/releases/tag/v1.10.7-rc.1) (2022-03-08)
+=========================================================================================================
+
+## ✨ Features
+ * Add a config.json option to skip the built-in Jitsi welcome screen ([\#21190](https://github.com/vector-im/element-web/pull/21190)).
+ * Add unexposed account setting for hiding poll creation ([\#7972](https://github.com/matrix-org/matrix-react-sdk/pull/7972)).
+ * Allow pinning polls ([\#7922](https://github.com/matrix-org/matrix-react-sdk/pull/7922)). Fixes #20152.
+ * Make trailing `:` into a setting ([\#6711](https://github.com/matrix-org/matrix-react-sdk/pull/6711)). Fixes #16682. Contributed by @SimonBrandner.
+ * Location sharing > back button ([\#7958](https://github.com/matrix-org/matrix-react-sdk/pull/7958)).
+ * use LocationAssetType ([\#7965](https://github.com/matrix-org/matrix-react-sdk/pull/7965)).
+ * Location share type UI ([\#7924](https://github.com/matrix-org/matrix-react-sdk/pull/7924)).
+ * Add a few more UIComponent flags, and ensure they are used in existing code ([\#7937](https://github.com/matrix-org/matrix-react-sdk/pull/7937)).
+ * Add support for overriding strings in the app ([\#7886](https://github.com/matrix-org/matrix-react-sdk/pull/7886)).
+ * Add support for redirecting to external pages after logout ([\#7905](https://github.com/matrix-org/matrix-react-sdk/pull/7905)).
+ * Expose redaction power level in room settings ([\#7599](https://github.com/matrix-org/matrix-react-sdk/pull/7599)). Fixes #20590. Contributed by @SimonBrandner.
+ * Update and expand ways to access pinned messages ([\#7906](https://github.com/matrix-org/matrix-react-sdk/pull/7906)). Fixes #21209 and #21211.
+ * Add slash command to switch to a room's virtual room ([\#7839](https://github.com/matrix-org/matrix-react-sdk/pull/7839)).
+
+## 🐛 Bug Fixes
+ * Remove Lojban translation ([\#21302](https://github.com/vector-im/element-web/pull/21302)).
+ * Add another null guard for member ([\#7984](https://github.com/matrix-org/matrix-react-sdk/pull/7984)). Fixes #21319.
+ * Fix room account settings ([\#7999](https://github.com/matrix-org/matrix-react-sdk/pull/7999)).
+ * Fix missing summary text for pinned message changes ([\#7989](https://github.com/matrix-org/matrix-react-sdk/pull/7989)). Fixes #19823.
+ * Pass room to getRoomTombstone to avoid racing with setState ([\#7986](https://github.com/matrix-org/matrix-react-sdk/pull/7986)).
+ * Hide composer and call buttons when the room is tombstoned ([\#7975](https://github.com/matrix-org/matrix-react-sdk/pull/7975)). Fixes #21286.
+ * Fix bad ternary statement in autocomplete user pill insertions ([\#7977](https://github.com/matrix-org/matrix-react-sdk/pull/7977)). Fixes #21307.
+ * Fix sending locations into threads and fix i18n ([\#7943](https://github.com/matrix-org/matrix-react-sdk/pull/7943)). Fixes #21267.
+ * Fix location map attribution rendering over message action bar ([\#7974](https://github.com/matrix-org/matrix-react-sdk/pull/7974)). Fixes #21297.
+ * Fix wrongly asserting that PushRule::conditions is non-null ([\#7973](https://github.com/matrix-org/matrix-react-sdk/pull/7973)). Fixes #21305.
+ * Fix account & room settings race condition ([\#7953](https://github.com/matrix-org/matrix-react-sdk/pull/7953)). Fixes #21163.
+ * Fix bug with some space selections not being applied ([\#7971](https://github.com/matrix-org/matrix-react-sdk/pull/7971)). Fixes #21290.
+ * Revert "replace all require(.svg) with esm import" ([\#7969](https://github.com/matrix-org/matrix-react-sdk/pull/7969)). Fixes #21293.
+ * Hide unpinnable pinned messages in more cases ([\#7921](https://github.com/matrix-org/matrix-react-sdk/pull/7921)).
+ * Fix room list being laggy while scrolling 🐌 ([\#7939](https://github.com/matrix-org/matrix-react-sdk/pull/7939)). Fixes #21262.
+ * Make pinned messages more reliably reflect edits ([\#7920](https://github.com/matrix-org/matrix-react-sdk/pull/7920)). Fixes #17098.
+ * Improve accessibility of the BetaPill ([\#7949](https://github.com/matrix-org/matrix-react-sdk/pull/7949)). Fixes #21255.
+ * Autofocus correct composer after sending reaction ([\#7950](https://github.com/matrix-org/matrix-react-sdk/pull/7950)). Fixes #21273.
+ * Consider polls as message events for rendering redactions ([\#7944](https://github.com/matrix-org/matrix-react-sdk/pull/7944)). Fixes #21125.
+ * Prevent event tiles being shrunk/collapsed by flexbox ([\#7942](https://github.com/matrix-org/matrix-react-sdk/pull/7942)). Fixes #21269.
+ * Fix ExportDialog title on export cancellation ([\#7936](https://github.com/matrix-org/matrix-react-sdk/pull/7936)). Fixes #21260. Contributed by @luixxiul.
+ * Mandate use of js-sdk/src/matrix import over js-sdk/src ([\#7933](https://github.com/matrix-org/matrix-react-sdk/pull/7933)). Fixes #21253.
+ * Fix backspace not working in the invite dialog ([\#7931](https://github.com/matrix-org/matrix-react-sdk/pull/7931)). Fixes #21249. Contributed by @SimonBrandner.
+ * Fix right panel soft crashes due to missing room prop ([\#7923](https://github.com/matrix-org/matrix-react-sdk/pull/7923)). Fixes #21243.
+ * fix color of location share caret ([\#7917](https://github.com/matrix-org/matrix-react-sdk/pull/7917)).
+ * Wrap all EventTiles with a TileErrorBoundary and guard parsePermalink ([\#7916](https://github.com/matrix-org/matrix-react-sdk/pull/7916)). Fixes #21216.
+ * Fix changing space sometimes bouncing to the wrong space ([\#7910](https://github.com/matrix-org/matrix-react-sdk/pull/7910)). Fixes #20425.
+ * Ensure EventListSummary key does not change during backpagination ([\#7915](https://github.com/matrix-org/matrix-react-sdk/pull/7915)). Fixes #9192.
+ * Fix positioning of the thread context menu ([\#7918](https://github.com/matrix-org/matrix-react-sdk/pull/7918)). Fixes #21236.
+ * Inject sender into pinned messages ([\#7904](https://github.com/matrix-org/matrix-react-sdk/pull/7904)). Fixes #20314.
+ * Tweak info message padding in right panel timeline ([\#7901](https://github.com/matrix-org/matrix-react-sdk/pull/7901)). Fixes #21212.
+ * Fix another freeze on room switch ([\#7900](https://github.com/matrix-org/matrix-react-sdk/pull/7900)). Fixes #21127.
+ * Fix out of memory error when failing to acquire location ([\#7902](https://github.com/matrix-org/matrix-react-sdk/pull/7902)). Fixes #21213.
+ * Fix edge case in context menu chevron positioning ([\#7899](https://github.com/matrix-org/matrix-react-sdk/pull/7899)).
+ * Fix composer format buttons on WebKit ([\#7898](https://github.com/matrix-org/matrix-react-sdk/pull/7898)). Fixes #20868.
+ * manage voicerecording state when deleting or sending a voice message ([\#7896](https://github.com/matrix-org/matrix-react-sdk/pull/7896)). Fixes #21151.
+ * Fix bug with useRoomHierarchy tight-looping loadMore on error ([\#7893](https://github.com/matrix-org/matrix-react-sdk/pull/7893)).
+ * Fix upload button & shortcut not working for narrow composer mode ([\#7894](https://github.com/matrix-org/matrix-react-sdk/pull/7894)). Fixes #21175 and #21142.
+ * Fix emoji insertion in thread composer going to the main composer ([\#7895](https://github.com/matrix-org/matrix-react-sdk/pull/7895)). Fixes #21202.
+ * Try harder to keep context menus inside the window ([\#7863](https://github.com/matrix-org/matrix-react-sdk/pull/7863)). Fixes #17527 and #18377.
+ * Fix edge case around event list summary layout ([\#7891](https://github.com/matrix-org/matrix-react-sdk/pull/7891)). Fixes #21180.
+ * Fix event list summary 1 hidden message pluralisation ([\#7890](https://github.com/matrix-org/matrix-react-sdk/pull/7890)). Fixes #21196.
+ * Fix vanishing recently viewed menu ([\#7887](https://github.com/matrix-org/matrix-react-sdk/pull/7887)). Fixes #20827.
+ * Fix freeze on room switch ([\#7884](https://github.com/matrix-org/matrix-react-sdk/pull/7884)). Fixes #21127.
+ * Check 'useSystemTheme' in quick settings theme switcher ([\#7809](https://github.com/matrix-org/matrix-react-sdk/pull/7809)). Fixes #21061.
+ * Fix 'my threads' filtering to include participated threads ([\#7882](https://github.com/matrix-org/matrix-react-sdk/pull/7882)). Fixes #20877.
+ * Remove log line to try to fix freeze on answering VoIP call ([\#7883](https://github.com/matrix-org/matrix-react-sdk/pull/7883)).
+ * Support social login & password on soft logout page ([\#7879](https://github.com/matrix-org/matrix-react-sdk/pull/7879)). Fixes #21099.
+ * Fix missing padding on server picker ([\#7864](https://github.com/matrix-org/matrix-react-sdk/pull/7864)).
+ * Throttle RoomState.members handlers ([\#7876](https://github.com/matrix-org/matrix-react-sdk/pull/7876)). Fixes #21127.
+ * Only show joined/invited in search dialog ([\#7875](https://github.com/matrix-org/matrix-react-sdk/pull/7875)). Fixes #21161.
+ * Don't pillify code blocks ([\#7861](https://github.com/matrix-org/matrix-react-sdk/pull/7861)). Fixes #20851 and #18687.
+ * Fix keyboard shortcut icons on macOS ([\#7869](https://github.com/matrix-org/matrix-react-sdk/pull/7869)).
+
 Changes in [1.10.6](https://github.com/vector-im/element-web/releases/tag/v1.10.6) (2022-03-01)
 ===============================================================================================
 

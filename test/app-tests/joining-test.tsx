@@ -18,8 +18,8 @@ limitations under the License.
 
 import PlatformPeg from 'matrix-react-sdk/src/PlatformPeg';
 import WebPlatform from '../../src/vector/platform/WebPlatform';
-import * as sdk from "matrix-react-sdk";
-import * as jssdk from "matrix-js-sdk";
+import * as sdk from "matrix-react-sdk/src/index";
+import * as jssdk from "matrix-js-sdk/src/matrix";
 import "../skin-sdk";
 import "../jest-mocks";
 import React from "react";
@@ -77,7 +77,6 @@ describe('joining a room', function() {
             const ROOM_ALIAS = '#alias:localhost';
             const ROOM_ID = '!id:localhost';
 
-            httpBackend.when('GET', '/capabilities').respond(200, { capabilities : {} });
             httpBackend.when('GET', '/pushrules').respond(200, {});
             httpBackend.when('POST', '/filter').respond(200, { filter_id: 'fid' });
 
