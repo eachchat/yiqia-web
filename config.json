@@ -21,18 +21,15 @@
         "authHeaderLogoUrl": "vector-icons/Logo.svg",
         "authFooterLinks": []
     },
-    "integrations_ui_url": "https://scalar.vector.im/",
-    "integrations_rest_url": "https://scalar.vector.im/api",
+    "integrations_ui_url": "https://integration.yiqia.com/element",
+    "integrations_rest_url": "https://integration.yiqia.com/api/v1/scalar",
     "integrations_widgets_urls": [
-        "https://scalar.vector.im/_matrix/integrations/v1",
-        "https://scalar.vector.im/api",
-        "https://scalar-staging.vector.im/_matrix/integrations/v1",
-        "https://scalar-staging.vector.im/api",
-        "https://scalar-staging.riot.im/scalar/api"
+        "https://integration.yiqia.com/widgets/jitsi"
     ],
+    "integrations_jitsi_widget_url": "http://localhost:8082/widgets/jitsi",
     "settingDefaults": {
-        "showCommunitiesInsteadOfSpaces": true,
-        "TagPanel.enableTagPanel": false,
+        "showCommunitiesInsteadOfSpaces": false,
+        "TagPanel.enableTagPanel": true,
         "UIFeature.communities": false,
         "language": "zh-hans",
         "UIFeature.deactivate": false,
@@ -46,7 +43,7 @@
         "UIFeature.advancedSettings": false,
         "breadcrumbs": true,
         "UIFeature.conferenceEnabled": false,
-        "UIFeature.widgets": false,
+        "UIFeature.widgets": true,
         "UIFeature.messageReport": false,
         "UIFeature.messageViewSource": false,
         "UIFeature.canChangePassword": true,
@@ -59,6 +56,7 @@
         "mixedChatsWithDmAndRoom": true
     },
     "gmsUpdateInterval": 600000,
+    "yiqiaContact": true,
     "yiqiaDisableSlash": true,
     "forbiddenBan": true,
     "forbiddenIgnore": true,
